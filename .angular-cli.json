@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "website"
+    "name": "bigdata-website"
   },
   "apps": [
     {
@@ -19,9 +19,25 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "agency.min.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.css",
+        "../node_modules/font-awesome/css/font-awesome.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/bootstrap/dist/js/bootstrap.js",
+        "../node_modules/jquery/dist/jquery.js",
+        "../js/jquery.min.js",
+        "../js/jqBootstrapValidation.js",
+        "../js/agency.min.js",
+        "../js/html5shiv.js",
+        "../js/jquery.easing.min.js",
+        "../js/respond.min.js"
+
+      ],
+      "addons": [
+        "../node_modules/font-awesome/fonts/*.+(otf|eot|svg|ttf|woff|woff2)"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
